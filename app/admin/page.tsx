@@ -1,7 +1,7 @@
 'use client'
 import {useEffect,useState} from 'react'
 import {useRouter} from 'next/navigation'
-import {supabaseBrowser} from '@/lib/supabase-browser'
+import {supabaseBrowser} from '../../lib/supabase-browser'
 
 export default function Admin(){
  const r=useRouter(); const [user,setUser]=useState<any>(null); const [profile,setProfile]=useState<any>(null); const [deposits,setDeposits]=useState<any[]>([]); const [withdrawals,setWithdrawals]=useState<any[]>([]); const [settings,setSettings]=useState<any[]>([]); const [tasks,setTasks]=useState<any[]>([]); const [msg,setMsg]=useState(''); const [busy,setBusy]=useState(false)
